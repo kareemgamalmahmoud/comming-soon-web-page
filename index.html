@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>areem.tk</title>
+    <link rel="shortcut icon" type="image/png" href="images%20(1).png">
+    
+    <meta charset="UTF-8">
+    <title>navigation bar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="share.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+    
+    
+    </style>
+    
+
+    
+</head>
+<body style="
+        background-image: url(bg-01.jpg);padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+             ">
+    
+    <header class="header">
+
+  <nav class="navigation">
+
+    <section class="logo"></section>
+
+    <section class="navigation__icon">
+      <span class="topBar"></span>
+      <span class="middleBar"></span>
+      <span class="bottomBar"></span>
+    </section>
+
+    <ul class="navigation__ul">
+      <li><a href="about.html" target="iframe">ABOUT</a></li>
+      <li><a href="services.html" target="iframe">SERVICES</a></li>
+      <li><a href="subscribe.html" target="iframe">SUBSCRIBE</a></li>
+    </ul>
+
+      <iframe frameborder="0" name="iframe" width="100%" height="450px" src=""></iframe>  
+      
+  </nav>
+
+  <nav class="come">
+      <header>
+            <div class="Soon">
+            <br><br><br><br><br><br><br><br><br>
+            <a href="nav.html" style="text-decoration: none;">
+                <img src="images%20(1).png" style="border-radius: 70%; height: 60px; width: 60px;"></img>
+                <span style="font-family:Brush Script MT; color:lightcyan;font-size: 500% ">
+                    areem<sapn style="color: yellow">.tk</sapn>
+                </span>
+            </a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <p>Building Awesome Website</p>
+            <h1>SOON IS COMMING</h1>
+            <hr>
+            <p id="launch"></p>
+            
+            <ul class="share">
+	           <li><a href="https://www.facebook.com/kareem.shehata.7731"><i class="fa fa-facebook" id="facebook"></i></a></li>
+	           <li><a href="https://twitter.com/kareem09175427"><i class="fa fa-twitter" id="twitter"></i></a></li>
+	           <li><a href="kareem.shehata1999.com"><i class="fa fa-google-plus" id="google-plus"></i></a></li>
+	           <li><a href="https://www.instagram.com/kareem.shehata.7731/"><i class="fa fa-instagram" id="instagram"></i></a></li>
+	           <li><a href="https://api.whatsapp.com/send?phone=201222971255&text=Hello%20:)"><i class="fa fa-whatsapp" id="whatsapp"></i></a></li>
+	           <li><a href="https://www.linkedin.com/in/kareem-gamal-407438188/"><i class="fa fa-linkedin" id="linkedin"></i></a></li>
+            </ul>
+                
+            </div>
+        </header>
+      <script>
+    
+        var countDownDate = new Date ("March 1, 2020 00:00:00").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date ().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor (distance /(1000*60*60*24));
+        var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
+        var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
+        var seconds = Math.floor ((distance % (1000*60)) / 1000);
+
+        document.getElementById("launch").innerHTML=days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById('launch').innerHTML="EXPIRED";
+        }
+            
+        }, 1000);
+    
+    </script>
+      
+      
+  </nav>
+    
+</header>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+    
+        
+   
+     $(function() {
+         $(".navigation__icon").click(function() {
+             $(".navigation").toggleClass('navigation-open');
+             });
+         });
+  
+    
+        
+   
+    
+    </script>
+</body>
+</html>
